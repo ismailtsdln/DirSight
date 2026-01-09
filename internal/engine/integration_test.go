@@ -1,7 +1,6 @@
 package engine
 
 import (
-	"context"
 	"net/http"
 	"net/http/httptest"
 	"testing"
@@ -24,12 +23,9 @@ func TestIntegration_FullScanWithBypass(t *testing.T) {
 	defer server.Close()
 
 	client, _ := NewClient(5*time.Second, "", false)
-	scanner := NewScanner(client, 2)
 
 	// We'll test with the bypass logic
 	bypassMethods := bypass.GetBypassMethods()
-
-	ctx := context.Background()
 
 	// Simulate one scan without bypass
 	req1, _ := http.NewRequest("GET", server.URL+"/forbidden", nil)
