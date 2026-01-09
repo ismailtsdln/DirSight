@@ -1,6 +1,5 @@
 # DirSight 🎯
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/ismailtsdln/DirSight)](https://goreportcard.com/report/github.com/ismailtsdln/DirSight)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **DirSight** is a high-performance, next-generation web directory discovery and 403 Forbidden bypass tool. Engineered in Go, it leverages concurrent goroutine pools and sophisticated bypass techniques to uncover hidden resources that traditional scanners miss.
